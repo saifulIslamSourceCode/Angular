@@ -33,3 +33,30 @@ console.log(aPerson.getFullName())
 // console.log(aEmployee.firstName)
 
 // Unit 3 video number = 13
+
+/*Inheritance*/
+class P {
+    firstName: string;
+    lastName: string;
+    greet() {
+        console.log('hello');
+    }
+    constructor(fName: string, lName: string) {
+        this.firstName = fName
+        this.lastName = lName
+    }
+}
+
+
+class L extends P{
+    greet(): void {
+        console.log('nice')
+    }
+    greetLikeNormalPeople(){ 
+        super.greet();
+    }
+}
+
+var L1 = new L('ninja', 'islam');
+console.log(L1.firstName)
+L1.greet()
