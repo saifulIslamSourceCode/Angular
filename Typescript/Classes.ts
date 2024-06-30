@@ -49,7 +49,7 @@ class P {
 
 
 class L extends P{
-    greet(): void {
+    greet() {
         console.log('nice')
     }
     greetLikeNormalPeople(){ 
@@ -57,6 +57,9 @@ class L extends P{
     }
 }
 
-var L1 = new L('ninja', 'islam');
+var L1:P = new L('ninja', 'islam');
 console.log(L1.firstName)
 L1.greet()
+console.log(L1.firstName);
+
+//video 14
